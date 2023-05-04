@@ -4,14 +4,14 @@
 
 Our goal is to select the 1:1 ratio of matched females for males using age (within 5 or 10 years) and PC distance (PC1-PC3), if there are more females than males in the sample file.
 
-### Function name
+### 1.Function name
 >match_sample() in match_sample_function.R
 
 Source function file first
 ```
 source(match_sample_function.R)
 ```
-### Input file format
+### 2.Input file format
 
 > headers: ID sex age PC1 PC2 PC3
 
@@ -19,11 +19,11 @@ Save input file as "example.input.txt"
 
 P.S. Input file sex code: 1 as male, 0 as female (if females are more than males) 
 
-### Output file format
+### 3.Output file format
 
 > headers: male.ID male.sex male.age  male.PC1  male.PC2  male.PC3 female.ID female.sex female.age female.PC1 female.PC2 female.PC3
 
-Example Usage:
+### 4.Example Usage:
 ```
 input=read.table('example.input.txt',header=T)
 
