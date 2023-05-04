@@ -47,7 +47,7 @@ head(input)
 
 ```
 out.match=match_sample(input)
-write.table(out.match,'match.output.txt',row.names=F,sep='\t')
+write.table(out.match,'match.output.txt',row.names=F,sep='\t',quote=F)
 
 head(out.match)
 ```
