@@ -7,7 +7,7 @@ Our goal is to select the 1:1 ratio of matched females for males using age (with
 ### 1.Function name
 >match_sample() in match_sample_function.R
 
-Source function file first
+Source the function file first
 ```
 source(match_sample_function.R)
 ```
