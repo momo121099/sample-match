@@ -5,11 +5,11 @@
 Our goal is to select the 1:1 ratio of matched females for males using age (within 5 or 10 years) and PC distance (PC1-PC3), if there are more females than males in the sample file.
 
 ### Function name
->match_sample() in match_sample_script.R
+>match_sample() in match_sample_function.R
 
 Source function file first
 ```
-source(match_sample_script.R)
+source(match_sample_function.R)
 ```
 ### Input file format
 
