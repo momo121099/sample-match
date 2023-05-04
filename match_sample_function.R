@@ -1,3 +1,4 @@
+##scripts generated from Min-Lee Yang
 ##Function for sample matching
 ##Our goal is to select the 1:1 ratio of matched females for males using age and PC1-PC3, if there are more females than males in the sample file
 ##Input file 'example.input.txt' column: ID sex age PC1 PC2 PC3
