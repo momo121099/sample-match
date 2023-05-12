@@ -31,7 +31,7 @@ if(length(match.idx.remove.already.match)<1){
         match.idx.remove.already.match<-match.idx[which(is.na(match(match.idx,already.match.idxlist))==T&is.na(match(female1[match.idx,1],female1[already.match.idxlist,1]))==T)]}
 if(length(match.idx.remove.already.match)>=2){ # if more than 2 females meet the matched age criteria, then select the one with the shorted PC distance
         mat.data=rep(as.numeric(PC),each=length(match.idx.remove.already.match))
-		mat1 <- matrix(mat.data,nrow=length(match.idx.remove.already.match),ncol=3,byrow=TRUE)
+		mat1 <- matrix(mat.data,nrow=length(match.idx.remove.already.match),ncol=3,byrow=FALSE) #fix a bug here
         dist.sum<-rowSums((mat1-cbind(female1$PC1,female1$PC2,female1$PC3)[match.idx.remove.already.match,])^2)
         match.idx.select<-match.idx.remove.already.match[which.min(dist.sum)]
 		}else{ # if only one female meet the matched age criteria
